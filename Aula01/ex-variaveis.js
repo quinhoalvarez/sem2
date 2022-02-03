@@ -90,17 +90,44 @@ console.log(S);
 
 // Delta
 
+let a = 3;
+let b = 2;
+let c = -4;
+let delta = Math.pow(b, 2) - 4 * a * c;
+
+console.log(delta)
 
 
 // Volume de uma esfera
+const pirad = 3.1415
+let diametro = 6
+let rraio = diametro / 2
+
+let volume = (4 / 3) * pirad * Math.pow(rraio, 3)
+
+console.log(volume);
 
 
 // Taxa de juros
+let capInicial = 100000
+let montanteFinal = 120000
+let nPeriodo = 12
+let exponencial = 1 / nPeriodo
+let txJuros = (Math.pow((montanteFinal / capInicial), exponencial) - 1) * 100
+
+console.log(`O seu financiamento de ${capInicial} reais teve uma taxa de juros de ${txJuros.toFixed(2)} %, pois após ${nPeriodo} meses você teve que pagar ${montanteFinal} reais `);
 
 
 // Área total de um cilindro
 
+// At = 2(p.r²) + 2(p.r.h)
 
+let raioCilindro = 5
+let alturaCilindro = 10
+
+let At = 2 * (pirad * Math.pow(raioCilindro, 2)) + 2 * (pirad * raioCilindro * alturaCilindro)
+
+console.log(At);
 
 
 
